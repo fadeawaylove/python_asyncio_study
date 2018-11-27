@@ -31,7 +31,10 @@ class gitScript(object):
 
 # 呵呵呵
 if __name__ == "__main__":
-    commit = sys.argv[-1]
+    # 要先获取当前路径
+    current_path = os.getcwd()
+    print(current_path)
 
-    g = gitScript()
-    g.run(commit)
+    # commit = sys.argv[-1]
+    commit = raw_input("message:")
+    gitScript().run(commit)
