@@ -30,7 +30,7 @@ class gitScript(object):
             if line.startswith("*"):
                 return line[1:]
 
-
+# 呵呵呵
 if __name__ == "__main__":
     commit = sys.argv[-1]
 
