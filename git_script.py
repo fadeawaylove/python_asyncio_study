@@ -1,7 +1,7 @@
 # coding=utf-8
 # 自动提交合并代码
 import os
-
+import sys
 
 class gitScript(object):
     def __init__(self):
@@ -13,6 +13,8 @@ class gitScript(object):
         os.system("git checkout develop")
 
         os.system("git pull origin develop")
+        os.system(":")
+        os.system("q\n")
 
         os.system("git merge {}".format(self.current_branch))
 
@@ -29,10 +31,8 @@ class gitScript(object):
                 return line[1:]
 
 
-
-
-
 if __name__ == "__main__":
+    commit = sys.argv[-1]
+
     g = gitScript()
-    g.run("test")
-    print(g.current_branch)
+    g.run(commit)
