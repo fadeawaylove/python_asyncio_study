@@ -13,13 +13,12 @@ class gitScript(object):
         os.system("git checkout develop")
 
         os.system("git pull origin develop")
-        os.system(":")
-        os.system("q\n")
+        # os.system(":")
+        # os.system("q\n")
 
         os.system("git merge {}".format(self.current_branch))
-
-        os.system(":")
-        os.system("q\n")
+        # os.system(":")
+        # os.system("q\n")
 
         os.system("git push origin develop")
         os.system("git checkout {}".format(self.current_branch))
