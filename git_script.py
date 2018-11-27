@@ -20,7 +20,7 @@ class gitScript(object):
         os.system("q\n")
 
         os.system("git push origin develop")
-        os.system("git checkout {}".self.current_branch)
+        os.system("git checkout {}".format(self.current_branch))
 
 
     def getCurBranchName(self):
